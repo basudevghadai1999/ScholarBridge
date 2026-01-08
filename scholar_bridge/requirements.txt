@@ -1,0 +1,27 @@
+# Core Dependencies
+fastapi==0.109.2
+uvicorn==0.27.1
+python-dotenv==1.0.1
+pydantic>=2.8.0
+requests==2.31.0
+pyyaml==6.0.1
+
+# AI & LLM
+google-generativeai>=0.7.0
+chromadb==0.4.22
+langgraph
+langchain-core
+
+# Research & Scraping
+arxiv==2.1.0
+pymupdf==1.23.22
+beautifulsoup4==4.12.3
+
+# Utilities
+termcolor==2.4.0
+tenacity==8.2.3
+numpy<2.0.0
+
+# Retrieval
+rank-bm25==0.2.2
+

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-white min-h-screen antialiased;
+  }
+}
+
+.cms-content h1 {
+    @apply text-4xl font-bold mb-6 text-neutral-900 leading-tight font-display;
+}
+.cms-content h2 {
+    @apply text-2xl font-bold mt-10 mb-4 text-neutral-800 font-display;
+}
+.cms-content h3 {
+    @apply text-xl font-bold mt-8 mb-3 text-neutral-800 font-display;
+}
+.cms-content p {
+    @apply mb-5 text-neutral-600 leading-relaxed text-lg;
+}
+.cms-content ul {
+    @apply list-disc list-outside ml-6 mb-6 text-neutral-600;
+}
+.cms-content li {
+    @apply mb-2 pl-2;
+}
+.cms-content strong {
+    @apply font-bold text-neutral-900;
+}
+
+/* Custom Font Family Utilities handled by Tailwind config usually, but mapping simple here */
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+.font-display {
+    font-family: 'Playfair Display', serif;
+}

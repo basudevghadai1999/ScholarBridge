@@ -1,0 +1,24 @@
+model_settings:
+  provider: "gemini"
+  model_name: "gemini-2.0-flash" # Verified available model
+  temperature: 0.2
+  max_output_tokens: 4096
+  api_key_env_var: "GEMINI_API_KEY"
+
+arxiv_settings:
+  max_results: 10
+  search_period_days: 90
+  sort_by: "submittedDate"
+  sort_order: "descending"
+
+paths:
+  data_dir: "data"
+  cache_dir: "data/cache"
+
+# Advanced Chunking Configuration
+chunking:
+  chunk_size: 1000          # Target chunk size in characters
+  overlap_percent: 20       # Overlap percentage between chunks
+  min_chunk_size: 100       # Minimum chunk size in characters
+  section_detection: true   # Enable section detection for academic papers
+  semantic_tagging: false   # LLM-based semantic tagging (expensive, disabled by default)
